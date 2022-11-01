@@ -68,14 +68,12 @@ ul {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.header,
-.background-photo {
-  background-color: var(--third-color);
-}
+
 
 /*HEADER*/
 .header {
   border-bottom: 1px solid #ececec;
+  background-color: var(--third-color);
 }
 .header-container {
   display: flex;
@@ -96,6 +94,7 @@ ul {
 }
 .header-contacts-item {
   margin-right: 50px;
+  
 }
 .logo {
   font-family: "Raleway";
@@ -130,14 +129,33 @@ ul {
 .header-contacts {
   color: var(--second-color);
   display: block;
+  
 }
+.header-icon{
+  margin-right: 10px;
+}
+
+
 
 /*HERO STUDIO*/
 .main-section {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/img-background.jpg);
+  background-position: center;
+  
   padding-top: 200px;
   padding-bottom: 200px;
-
   text-align: center;
+
 
   background-color: var(--background-main-footer);
 }
@@ -157,6 +175,7 @@ ul {
 }
 .button {
   padding: 10px 32px;
+  border: none;
 
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -207,6 +226,16 @@ ul {
   letter-spacing: 0.03em;
   color: var(--second-color);
 }
+.peculiarities-background{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 100px;
+  margin-bottom: 30px;
+  background: #F5F4FA;
+
+}
+
 /* About */
 .about-works{
   color: var(--white-color);
@@ -229,6 +258,12 @@ ul {
   margin-right: 30px;
 }
 /* Our team */
+.background-photo {
+  background-color: var(--third-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+
+}
 .background-about {
   background-color: #f5f4fa;
   padding-top: 94px;
@@ -260,6 +295,51 @@ ul {
   font-weight: 400;
   color: var(--second-color);
 }
+.about-icon-list{
+  display: flex;
+  padding-top: 16px;
+  padding-left: 32px;
+  padding-right: 32px;
+  gap:10px;
+}
+.about-icon-item{
+  padding: 12px 12px;
+}
+/* Clients */
+.clients{
+  background-color: var(--white-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.clients-title{
+margin-bottom: 50px;
+
+font-weight: 700;
+font-size: 36px;
+line-height: 42px;
+text-align: center;
+letter-spacing: 0.03em;
+color: #212121;
+}
+.clients-list{
+  display: flex;
+  justify-content: center;
+}
+.clients-item:not(:last-child){
+  margin-right: 30px;
+}
+.clients-item{
+  padding: 16px 32px;
+  border: 1px solid #AFB1B8
+}
+.clients-item:hover{
+  border: 1px solid #2196F3;
+  }
+.clients-icon:hover{
+  fill:0 #2196f3;
+}
+
+
 
 /*HERO PORTFOLIO*/
 .background-portfolio {
@@ -278,7 +358,7 @@ margin-right: 8px;
 }  
 .main-btn {
   padding: 6px 22px;
-  border-radius: 4px;
+  border: none;
   
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -310,6 +390,7 @@ margin-right: 8px;
   padding: 20px 24px;
   border: 1px solid #EEEEEE;
   border-top: none;
+  
 }
 .title {
   margin-bottom: 4px;
